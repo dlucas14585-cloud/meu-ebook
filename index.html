@@ -1,131 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Guia: Formatação e Instalação do Windows — R$39,99</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root{
-      --blue:#0f62fe;
-      --accent:#ff6a00;
-      --muted:#6b7280;
-      --bg:#f7fafc;
-      --card:#ffffff;
-      --radius:12px;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Arial; margin:0; background:var(--bg); color:#0f1724; -webkit-font-smoothing:antialiased}
-    .wrap{max-width:1100px;margin:32px auto;padding:20px}
-    .top{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:14px}
-    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#2aa0ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 8px 24px rgba(15,98,254,0.15)}
-    .brand h1{font-size:18px;margin:0}
-    .subtitle{color:var(--muted);font-size:13px;margin-top:4px}
-    /* HERO */
-    .hero{display:grid;grid-template-columns: 1fr 420px;gap:28px;margin-top:22px;align-items:center}
-    @media (max-width:920px){.hero{grid-template-columns:1fr;padding:0 12px}.hero-right{order:-1}}
-    .card{background:var(--card);border-radius:var(--radius);padding:26px;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
-    .title{font-size:28px;color:var(--blue);margin:0 0 8px 0}
-    .lead{color:var(--muted);margin-bottom:16px}
-    .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
-    .feature{display:flex;gap:10px;align-items:flex-start;color:#0f1724}
-    .feature i{color:var(--accent);font-size:20px;min-width:28px}
-    .price{font-size:22px;color:var(--accent);font-weight:700;margin:16px 0}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .btn-primary{background:linear-gradient(90deg,var(--accent),#ff8a2b);color:white;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(255,106,0,0.18)}
-    .btn-primary:hover{transform:translateY(-3px)}
-    .btn-ghost{background:transparent;border:1px solid #e6eef7;color:var(--blue);padding:12px 16px;border-radius:10px;text-decoration:none}
-    /* right column - cover */
-    .hero-right{display:flex;flex-direction:column;gap:18px;align-items:center}
-    .cover{width:100%;max-width:340px;border-radius:10px;overflow:hidden;box-shadow:0 18px 40px rgba(2,6,23,0.08)}
-    .cover img{width:100%;height:auto;display:block}
-    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:#f0f8ff;color:var(--blue);font-weight:600;font-size:13px}
-    /* sections */
-    section{margin-top:28px}
-    h2{font-size:18px;color:#0b1220;margin-bottom:10px}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    @media (max-width:920px){.grid-3{grid-template-columns:1fr}}
-    .note{color:var(--muted);font-size:14px}
-    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px;padding-bottom:40px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Formatação e Instalação do Windows</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0078ff, #00c6ff);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header img {
+            width: 200px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+        }
+        header h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+        .price {
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+        .price s {
+            color: #ffbaba;
+            margin-right: 10px;
+        }
+        .btn-buy {
+            background: #ff9800;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 15px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+            transition: background 0.3s ease-in-out;
+        }
+        .btn-buy:hover {
+            background: #e68900;
+        }
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            font-size: 0.9em;
+        }
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+        }
+        .testimonial {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="top">
-      <div class="brand">
-        <div class="logo">W</div>
-        <div>
-          <h1>Guia de Formatação e Instalação do Windows</h1>
-          <div class="subtitle">Passo a passo visual — seguro e sem enrolação</div>
-        </div>
-      </div>
-      <div class="badge">Preço único • R$ 39,99</div>
-    </div>
 
-    <div class="hero">
-      <!-- LEFT: copy -->
-      <div class="card">
-        <p class="title">Formate e reinstale o Windows como um profissional</p>
-        <p class="lead">Guia prático com imagens reais — ideal para quem quer recuperar desempenho, remover vírus e fazer instalação limpa, passo a passo.</p>
+    <header>
+        <img src="CAPA-DO-EBOOK.jpg" alt="Capa do Ebook Guia de Windows">
+        <h1>Guia de Formatação e Instalação do Windows</h1>
+        <p class="price">
+            <s>R$ 39,99</s> <strong>R$ 29,99</strong>
+        </p>
+        <a href="https://pay.hotmart.com/R101290033O?off=fttqnp13" target="_blank" class="btn-buy">
+            <i class="fa-solid fa-cart-shopping"></i> Comprar Agora
+        </a>
+    </header>
 
-        <div class="features">
-          <div class="feature"><i class="fa-solid fa-check-circle"></i><div><strong>Fácil de seguir</strong><div class="note">Imagens reais e instruções claras.</div></div></div>
-          <div class="feature"><i class="fa-solid fa-shield-halved"></i><div><strong>Seguro</strong><div class="note">Inclui checklist de backup e segurança.</div></div></div>
-          <div class="feature"><i class="fa-solid fa-flash"></i><div><strong>Rápido</strong><div class="note">Instalação otimizada e dicas de desempenho.</div></div></div>
-          <div class="feature"><i class="fa-solid fa-user-check"></i><div><strong>Para iniciantes</strong><div class="note">Sem jargão — passo por passo.</div></div></div>
-        </div>
+    <section>
+        <h2>📖 O que você vai aprender?</h2>
+        <ul>
+            <li>Como preparar seu computador para formatação</li>
+            <li>Passo a passo da instalação do Windows 10 e 11</li>
+            <li>Configurações essenciais pós-instalação</li>
+            <li>Dicas para otimizar o desempenho</li>
+        </ul>
+    </section>
 
-        <div class="price">R$ 39,99</div>
-
-        <div class="cta">
-          <!-- Substitua o href pelo seu link de checkout se necessário -->
-          <a class="btn-primary" href="https://pay.hotmart.com/R101290033O" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-cart-shopping" style="margin-right:8px"></i> Quero meu guia agora
-          </a>
-          <a class="btn-ghost" href="#conteudo">Ver sumário</a>
-        </div>
-
-        <section id="conteudo" style="margin-top:18px">
-          <h2>O que contém o guia</h2>
-          <div class="grid-3">
-            <div class="card" style="padding:16px">
-              <strong>Baixar ISO</strong>
-              <p class="note">Como baixar a ISO oficial e verificar integridade.</p>
+    <section>
+        <h2>💬 O que nossos clientes dizem</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Nunca foi tão fácil formatar meu PC, tutorial perfeito!"</p>
+                <strong>- João M.</strong>
             </div>
-            <div class="card" style="padding:16px">
-              <strong>Pendrive bootável</strong>
-              <p class="note">Criar USB bootável com Media Creation Tool e Rufus.</p>
+            <div class="testimonial">
+                <p>"Economizei muito tempo e dinheiro, recomendo!"</p>
+                <strong>- Ana P.</strong>
             </div>
-            <div class="card" style="padding:16px">
-              <strong>BIOS/UEFI</strong>
-              <p class="note">Como acessar e alterar a ordem de boot com segurança.</p>
+            <div class="testimonial">
+                <p>"Simples e direto, valeu cada centavo."</p>
+                <strong>- Lucas S.</strong>
             </div>
-          </div>
-        </section>
-
-        <section style="margin-top:20px">
-          <h2>Garantia e suporte</h2>
-          <p class="note">Se por algum motivo o material não atender suas expectativas, ofereça uma política clara (ex.: 7 dias de garantia). Conte também com instruções de suporte por e-mail.</p>
-        </section>
-      </div>
-
-      <!-- RIGHT: cover -->
-      <aside class="hero-right">
-        <div class="cover">
-          <!-- Substitua o src abaixo pela sua capa (ex.: capa-ebook.png) -->
-          <img src="https://via.placeholder.com/600x900.png?text=CAPA+DO+EBOOK" alt="Capa do Ebook">
         </div>
-        <div style="text-align:center">
-          <div class="badge"><i class="fa-solid fa-download"></i>&nbsp;Entrega digital imediata</div>
-        </div>
-      </aside>
-    </div>
+    </section>
 
     <footer>
-      © 2025 — Seu Nome / Sua Marca · Pagamento seguro via Hotmart
+        &copy; 2025 Guia Windows - Todos os direitos reservados.
     </footer>
-  </main>
+
 </body>
 </html>
