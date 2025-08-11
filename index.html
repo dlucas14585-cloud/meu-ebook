@@ -3,76 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Ebook - Oferta Especial</title>
+    <title>Ebook - Oferta Exclusiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f4f6f8;
             color: #333;
         }
         header {
-            background-color: #1e88e5;
+            background: linear-gradient(90deg, #ff6a00, #ff9800);
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 40px 20px;
         }
         header h1 {
-            margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
         }
         main {
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
-            text-align: center;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
         }
         .ebook-img {
+            flex: 1;
+            min-width: 280px;
+        }
+        .ebook-img img {
             width: 100%;
-            max-width: 350px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+        }
+        .ebook-info {
+            flex: 1;
+            min-width: 280px;
+        }
+        .ebook-info h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ff6a00;
+        }
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .benefits li {
+            font-size: 1.1rem;
+            margin: 12px 0;
+        }
+        .benefits li i {
+            color: #ff6a00;
+            margin-right: 8px;
         }
         .price {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: bold;
-            color: #1e88e5;
+            color: #ff6a00;
             margin: 15px 0;
         }
         .buy-btn {
             display: inline-block;
-            background-color: #1e88e5;
+            background: linear-gradient(90deg, #ff6a00, #ff9800);
             color: white;
-            padding: 14px 30px;
+            padding: 15px 40px;
             font-size: 1.2rem;
-            border-radius: 6px;
+            border-radius: 8px;
             text-decoration: none;
+            box-shadow: 0px 4px 15px rgba(255, 106, 0, 0.4);
             transition: 0.3s;
         }
         .buy-btn:hover {
-            background-color: #1565c0;
+            transform: scale(1.05);
+            box-shadow: 0px 6px 20px rgba(255, 106, 0, 0.6);
         }
         footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
             margin-top: 40px;
             font-size: 0.9rem;
-            color: #777;
-            text-align: center;
-            padding: 10px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Transforme sua vida com este Ebook!</h1>
+        <h1><i class="fa-solid fa-book-open"></i> Transforme sua Vida com Este Ebook!</h1>
+        <p>Aprenda técnicas comprovadas para alcançar seus objetivos e ter resultados reais</p>
     </header>
 
     <main>
-        <img src="https://via.placeholder.com/350x500.png?text=Imagem+do+Ebook" alt="Ebook" class="ebook-img">
-        <h2>Aprenda estratégias únicas e práticas para alcançar seus objetivos</h2>
-        <p class="price">R$ 39,99</p>
-        <a href="https://pay.hotmart.com/R101290033O" class="buy-btn">Comprar Agora</a>
+        <div class="ebook-img">
+            <img src="https://via.placeholder.com/400x550.png?text=Capa+do+Ebook" alt="Ebook">
+        </div>
+        <div class="ebook-info">
+            <h2>O que você vai aprender:</h2>
+            <ul class="benefits">
+                <li><i class="fa-solid fa-check-circle"></i> Estratégias práticas e simples</li>
+                <li><i class="fa-solid fa-check-circle"></i> Passo a passo fácil de seguir</li>
+                <li><i class="fa-solid fa-check-circle"></i> Resultados rápidos e consistentes</li>
+                <li><i class="fa-solid fa-check-circle"></i> Conteúdo exclusivo e atualizado</li>
+            </ul>
+            <p class="price">R$ 39,99</p>
+            <a href="https://pay.hotmart.com/R101290033O" class="buy-btn"><i class="fa-solid fa-cart-shopping"></i> Comprar Agora</a>
+        </div>
     </main>
 
     <footer>
